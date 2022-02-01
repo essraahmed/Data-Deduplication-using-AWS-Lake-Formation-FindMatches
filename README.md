@@ -14,7 +14,8 @@ Input:
   <li>Dataset2 with some records (~64,000). Messy, duplicated.</li>
   <li>Matching records (labels) (~350).</li>
 
-The matching process includes the following steps:
+Combined the two datasets into a single file with a new column that indicates the source of each record, and provided a label file (the “perfect mapping”) in a format compatible with FindMatches.<br>
+The matching process includes the following steps:<br>
 
   <ul><li>Catalog your data with the AWS Glue Data Catalog.</li>
     <li>Create a new FindMatches ML transform for your data.</li>
