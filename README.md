@@ -14,13 +14,20 @@ Input:
   <li>Dataset2 with some records (~64,000). Messy, duplicated.</li>
   <li>Matching records (labels) (~350).</li>
 
+The matching process includes the following steps:
+
+  <ul><li>Catalog your data with the AWS Glue Data Catalog.</li>
+    <li>Create a new FindMatches ML transform for your data.</li>
+    <li>Teach FindMatches by providing labeling examples of matching and non-matching records.</li>
+    <li>Review match quality metrics and upload more labels if match quality is not yet sufficient.</li>
+    <li>Create an AWS Glue ETL job that uses your FindMatches transform.</li>
+    <li>Review the output.
+
 # AWS Services Used<br>
   
   
 AWS Services                        | Description
 ------------                        | -------------
 Amazon S3 (Simple Storage Service)  | used to store and protect any amount of data.
-AWS Lake Formation | service that makes it easy to set up a secure data lake in days.
 AWS Glue | ETL service to categorize data for cleaning, enriching and transforming between various data stores.
-Athena | for querying the data you import into your data lake.
 
