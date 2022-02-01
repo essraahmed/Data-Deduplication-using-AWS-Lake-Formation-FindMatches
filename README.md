@@ -12,19 +12,21 @@ Match other data: Match addresses, movies, parts lists, etc. In general, if a hu
 Input:
 <ul><li>Neat Dataset1 with some records (~2600).</li>
   <li>Dataset2 with some records (~64,000). Messy, duplicated.</li>
-  <li>Matching records (labels) (~350).</li>
+  <li>Matching records (labels) (~350).</li></ul>
 
+  
 Combined the two datasets into a single file with a new column that indicates the source of each record, and provided a label file (the “perfect mapping”) in a format compatible with FindMatches.<br>
 The matching process includes the following steps:<br>
 
-  <ul><li>Catalog your data with the AWS Glue Data Catalog.</li>
-    <li>Create a new FindMatches ML transform for your data.</li>
+  <ul><li>Catalog the data with the AWS Glue Data Catalog.</li>
+    <li>Create a new FindMatches ML transform for the data.</li>
     <li>Teach FindMatches by providing labeling examples of matching and non-matching records.</li>
     <li>Review match quality metrics and upload more labels if match quality is not yet sufficient.</li>
     <li>Create an AWS Glue ETL job that uses your FindMatches transform.</li>
-    <li>Review the output.
+    <li>Review the output.</li></ul>
 
-# AWS Services Used<br>
+      
+## AWS Services Used<br>
   
   
 AWS Services                        | Description
