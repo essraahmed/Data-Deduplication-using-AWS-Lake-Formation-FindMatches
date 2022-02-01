@@ -14,7 +14,7 @@ Input:
   <li>Dataset2 with some records (~64,000). Messy, duplicated.</li>
   <li>Matching records (labels) (~350).</li></ul>
 
-<b>Solution</b>  
+<b>Solution:</b>  
 Combined the two datasets into a single file with a new column that indicates the source of each record, and provided a label file (the “perfect mapping”) in a format compatible with FindMatches.<br>
 The matching process includes the following steps:<br>
 
@@ -32,5 +32,5 @@ The matching process includes the following steps:<br>
 AWS Services                        | Description
 ------------                        | -------------
 Amazon S3 (Simple Storage Service)  | used to store and protect any amount of data.
-AWS Glue | ETL service to categorize data for cleaning, enriching and transforming between various data stores.
+AWS Glue | ETL service to categorize data for cleaning, enriching and transforming between data stores.
 
