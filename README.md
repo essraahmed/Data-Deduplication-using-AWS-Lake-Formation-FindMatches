@@ -13,8 +13,11 @@ Input:
 <ul><li>Neat Dataset1 with some records (~2600).</li>
   <li>Dataset2 with some records (~64,000). Messy, duplicated.</li>
   <li>Matching records (labels) (~350).</li>
- # AWS Services Used
-  AWS Services                        | Description
+
+# AWS Services Used<br>
+  
+  
+AWS Services                        | Description
 ------------                        | -------------
 Amazon S3 (Simple Storage Service)  | used to store and protect any amount of data.
 AWS Lake Formation | service that makes it easy to set up a secure data lake in days.
